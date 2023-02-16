@@ -1,0 +1,21 @@
+.container {
+  color: #fff;
+}
+.app {
+  border: 5px solid;
+  padding: 50px 0;
+  width: 20%;
+  text-align: center;
+  margin: 0 auto;
+}
+.code {
+  font-size: 22px;
+  font-weight: 400;
+  width: 200px;
+  margin: 0 auto;
+  padding: 5px 0;
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
