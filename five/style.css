@@ -1,0 +1,39 @@
+.cover {
+  height: 100vh;
+}
+
+.row-margin {
+  margin: 4vh auto;
+}
+
+body {
+  background: #ff4e50;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(135deg, #ff4e50, #f9d423);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(135deg, #ff4e50, #f9d423);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.header {
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Pacifico";
+}
+input#inputPalindrome {
+  padding: 5px;
+}
+
+button#checkPalindrome {
+  padding: 8px;
+}
+
+.btn-default {
+  background-color: black;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
