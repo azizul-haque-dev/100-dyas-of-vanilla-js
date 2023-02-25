@@ -51,6 +51,7 @@ function displayData(res) {
     const today = new Date();
     const date = document.querySelector(".date");
     date.innerText = dateFunction(today);
+    document.querySelector("form").reset();
   }
 }
 function dateFunction(d) {
