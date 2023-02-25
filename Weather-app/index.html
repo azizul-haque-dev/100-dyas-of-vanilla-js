@@ -12,32 +12,28 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-
-  
   <section class="top-banner">
     <div class="container">
-      <h1 class="heading">Simple Weather App</h1>
+      <h1 class="app-title"><p>weather app</p></h1>
       <form>
-        <input type="text" placeholder="Search for a city" autofocus>
-        <button type="submit">SUBMIT</button>
+        <input id ="search"type="text" placeholder="Search for a city" autofocus>
+        <button id ="btn" type="submit">SUBMIT</button>
         <span class="msg"></span>
       </form>
     </div>
-    <div id="weather_wrapper">
-        <div class="weatherCard">
-          <div class="currentTemp">
-            <span class="temp">23&deg;</span>
-            <span class="location">Brussels</span>
-          </div>
-          <div class="currentWeather">
-            <span class="conditions">&#xf00d;</span>
-            <div class="info">
-              <span class="rain">1.3 MM</span>
-              <span class="wind">10 MPH</span>
-            </div>
-          </div>
+    <article class="widget">
+      <div class="icon">
+      <img class="img" src="" alt="">
+      </div>
+      <div class="weatherInfo">
+        <div class="temperature">°C</div>
+        <div class="description">    
+          <div class="weatherCondition">CLOUDY</div>    
+          <div class="place">New York, US</div>
         </div>
       </div>
+      <div class="date">1st Jan</div>
+    </article>
   </section>
   
 
