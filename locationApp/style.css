@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+hr {
+  width: 30%;
+}
+.btn {
+  background: rgb(36, 36, 238);
+  padding: 10px 8px;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
