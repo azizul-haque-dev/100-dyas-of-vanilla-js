@@ -3,8 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-.container {
-  width: 500px;
+.inner {
+  width: 700px;
   display: block;
   height: 400px;
   text-align: center;
@@ -14,10 +14,16 @@
   background: #0d1a29;
   font-family: "Helvetica Neue", "Open Sans", helvetica, arial, sans-serif;
 }
-
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 #count,
 h2 {
-  font-size: 2em;
+  font-size: 2.5rem;
   font-weight: 100;
   color: white;
   text-shadow: 0 0 20px #48c8ff;
@@ -36,7 +42,7 @@ input {
   color: #0d1a29;
   font-size: 16px;
   padding: 10px 8px;
-  margin: 10px 5px;
+  margin: 20px 5px;
   border: 1px solid#0D1A29;
   border-radius: 5px;
   -webkit-border-radius: 5px;
