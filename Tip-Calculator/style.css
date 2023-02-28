@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #25dba6;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  background-color: #ddd;
+  padding: 15px 10px;
+  height: 350px;
+  width: 400px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.heading {
+  background-color: #0c023a;
+  color: #fff;
+  font-size: 1.7rem;
+  padding: 10px;
+  text-align: center;
+}
+.input-content {
+  display: flex;
+
+  margin: 10px 0;
+  align-items: center;
+}
+.input-content label {
+  font-size: 20px;
+}
+.input-content input,
+#rate {
+  padding: 8px 5px;
+  width: 245px;
+  margin: 0 10px;
+  font-size: 18px;
+  border: 1px solid #25dba6;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.rate {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+  align-items: center;
+}
+.parcentage label {
+  font-size: 20px;
+}
+#rate option {
+  padding: 7px 10px;
+  background: #fff;
+  border: 1px solid #25dba6;
+  margin: 5px 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-size: 18px;
+}
+input#bill {
+  margin-left: 85px;
+}
+.button {
+  width: 100%;
+  text-align: center;
+}
+.btn {
+  padding: 7px 10px;
+  background: #25dba6;
+  border: 1px solid #25dba6;
+  margin: 20px 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-size: 18px;
+  color: #fff;
+}
+.bill-content {
+  margin: 10px 0;
+}
+.bill-content div {
+  margin: 10px 0;
+  font-size: 20px;
+}
+.active {
+  background-color: #25dba6;
+  color: #fff;
+}
