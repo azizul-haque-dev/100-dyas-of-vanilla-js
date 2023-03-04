@@ -5,5 +5,5 @@ btn.addEventListener("click", (e) => {
   e.preventDefault();
   let inputLe = input.value;
   console.log();
-  result.innerHTML = inputLe;
+  result.innerHTML = ` ${inputLe.length}`;
 });
