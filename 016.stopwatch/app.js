@@ -1,9 +1,9 @@
-var timer = 0;
-var timerInterval;
-var ms = document.getElementById('ms');
-var second = document.getElementById('second');
-var minute = document.getElementById('minute');
-
+let timer = 0;
+let timerInterval;
+let ms = document.getElementById('ms');
+let second = document.getElementById('second');
+let minute = document.getElementById('minute');
+let
 function start() {
   stop();
   timerInterval = setInterval(function() {
@@ -19,4 +19,9 @@ function start() {
 
 function stop() {
   clearInterval(timerInterval);
+}function reset() {
+  clearInterval(timerInterval);
+  minute.innerHTML='00'
+  second.innerHTML='00'
+  ms.innerHTML ='00'
 }
