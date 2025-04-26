@@ -1,38 +1,40 @@
-// Compare Objects for Equivalent Properties
+/* Bubble Sort
 
-//Write a JavaScript program to compare two objects to determine if the first contains equivalent property values to the second one.
+Write a bubble sort algorithm in JavaScript.
 
+Note : Bubble sort is a simple sorting algorithm that works by repeatedly stepping through the list to be sorted,
 
-function isObjEquivalent (obj1,obj2){
-    // const keys1 = Object.keys(obj1)
-    // const keys2 = Object.keys(obj2)
+Sample Data: [6,4,0, 3,-2,1]
+Expected Output : [-2, 0, 1, 3, 4, 6] */
+function bubbledSort(arr) {
+  let n = arr.length;
 
-    // if their lenth is not equal return false
-    // if(keys1.length !== keys2.length) return false
-    // if they dont have same key and value return false
-//     for(let key of keys1){
-// if(obj1[key] !== obj2[key]){
-//     return false
-// }
-//     }
-//     return true
-for (let key in obj2) {
-if (!(key in obj1) || obj1[key] !== obj2[key]) {
-return false;
-}
-}
-return true;
+  for (let i = 0; i < n - 1; i++) {
+    console.log(`lop ${i + 1}:`);
+
+    for (let j = 0; j < n - 1 - i; j++) {
+      console.log(`  Comparing ${arr[j]} with ${arr[j + 1]}`);
+
+      if (arr[j] > arr[j + 1]) {
+        console.log(`  Swapping ${arr[j]} and ${arr[j + 1]}`);
+
+        let temp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = temp;
+
+        console.log(`  Current array:`, arr);
+      } else {
+        console.log(`  No swap needed`);
+      }
+    }
+
+    console.log(`After loop ${i + 1}:`, arr);
+    console.log("------------------------");
+  }
+
+  console.log("Sorted array:", arr);
+  return arr;
 }
 
-function isObjEquivalent2 (obj1,obj2){
-   
-for (let key in obj2) {
-if (!(key in obj1) || obj1[key] !== obj2[key]) {
-return false;
-}
-}
-return true;
-}
-console.log(isObjEquivalent({ age: 25, hair: 'long', beard: true }, { hair: 'long', beard: true })); 
-console.log(isObjEquivalent({ hair: 'long', beard: true }, { age: 25, hair: 'long', beard: true })); 
-console.log(isObjEquivalent({ hair: 'long', beard: true }, { age: 26, hair: 'long', beard: true })); 
+// Call with an array
+bubbledSort([2, 1, 6, 5]);
