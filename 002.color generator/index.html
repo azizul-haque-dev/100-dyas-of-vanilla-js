@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hex Color Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d"
+            }
+          }
+        }
+      };
+    </script>
+    <!-- Font Awesome for icons -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="container text-center text-black">
+      <div class="app bg-white shadow-lg p-8 rounded-lg">
+        <h3 class="text-2xl font-bold mb-4">Random Hex Color Generator</h3>
+        <h4 id="color-code" class="text-xl font-mono mb-4">#ffffff</h4>
+        <button
+          id="generate-btn"
+          class="bg-clifford text-white px-6 py-2 rounded hover:bg-red-600 transition"
+        >
+          <i class="fas fa-sync-alt mr-2"></i>Generate
+        </button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
